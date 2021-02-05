@@ -1,8 +1,9 @@
 {
+    "python.pythonPath": "/home/mav/anaconda3/bin/python",
     "python.testing.unittestArgs": [
         "-v",
         "-s",
-        "./moontest",
+        "./snake",
         "-p",
         "*test.py"
     ],
