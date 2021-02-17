@@ -9,18 +9,18 @@ namespace student
     {
         private:string m_first;
         private:string m_last;
-        private:float m_grade;
+        private:double m_grade;
 
         //constructor
-        public:Student(string first,string last,float grade);
+        public:Student(string first,string last,double grade);
 
         string fullname();
         string email();
-        float curvegrade();
+        double curvegrade();
 
         string getfirst();
         string getlast();
-        float getgrade();
+        double getgrade();
 
     };
 } // namespace student

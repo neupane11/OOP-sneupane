@@ -3,7 +3,7 @@
 using namespace std;
 
 namespace student{
-    Student::Student(string first,string last,float grade){
+    Student::Student(string first,string last,double grade){
         m_first=first;
         m_last=last;
         m_grade=grade;
@@ -15,7 +15,7 @@ namespace student{
     string Student::email(){
         return m_first+"."+ m_last+"@email.com";
     }
-    float Student::curvegrade(){
+    double Student::curvegrade(){
         return m_grade+1.0;
     }
     string Student::getfirst(){
@@ -24,7 +24,7 @@ namespace student{
     string Student::getlast(){
         return m_last;
     }
-    float Student::getgrade(){
+    double Student::getgrade(){
         return m_grade;
     }
 }
