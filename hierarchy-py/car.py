@@ -10,7 +10,7 @@ class Vehicle:
     def usedfor(self):
         return self._usedfor
     
-class SportsCar(Vehicle):
+class Car(Vehicle):
     def __init__(self, typ:str,usedfor:str,price:int,company:str,model:str,speed:int) -> None:
         Vehicle.__init__(self,typ,usedfor)
         #self._typ:str=typ
