@@ -10,6 +10,7 @@ TEST(Vehicle, Constructor){
     ASSERT_EQ(vehicle.typ(),typ);
     ASSERT_EQ(vehicle.usedfor(),usedfor);
 }
+
 int main(int argc, char**argv){
     ::testing::InitGoogleTest(&argc, argv);
     return RUN_ALL_TESTS();
