@@ -1,4 +1,4 @@
-#include <string>
+/*#include <string>
 #include <iostream>
 #include "../include/servant.h"
 #include "../include/interfaceClass.h"
@@ -15,4 +15,4 @@ int main(){
     ram.whatisMood(q);
     
     return 0;
-}
+}*/

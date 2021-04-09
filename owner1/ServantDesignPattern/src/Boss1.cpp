@@ -1,24 +1,24 @@
 #include <string>
 #include <iostream>
 //#include <Queen.h>
-#include "../include/Queen.h"
+#include "../include/Boss1.h"
 
-void Queen::getFed(){
+void Boss1::getFed(){
     
     isHungry=false;
 }   
-void Queen::getDrink(){
+void Boss1::getDrink(){
     isDrunk=true;
 }
-void Queen::receiveCompliments(){
+void Boss1::receiveCompliments(){
     complimentReceived=true;
 }
-void Queen::changeMood(){
+void Boss1::changeMood(){
     if(complimentReceived && isDrunk && !isHungry){
         isHappy=true;
-        cout<<"queen is happy"<<endl;
+        cout<<"Boss1 is happy"<<endl;
     }
 }
-bool Queen::getMood(){
-    return isHungry;
+bool Boss1::getMood(){
+    return isHappy;
 }
