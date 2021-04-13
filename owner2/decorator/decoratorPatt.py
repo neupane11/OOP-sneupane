@@ -37,3 +37,14 @@ class RealMadrid(Stadium_Decorator):
         return self.decorated_stadium.seats()+ 75000
     def inEurope(self):
         return "Real Madrid stadium is in Madrid, Spain which is in"+ self.decorated_stadium.inEurope()
+
+class Barcelona(Stadium_Decorator):
+    def __init__(self,decorated_stadium):
+        Stadium_Decorator.__init__(self,decorated_stadium)
+
+    def fans(self):
+        return self.decorated_stadium.fans() + " that are from Barcelona. Population 3 mill"
+    def seats(self):
+        return self.decorated_stadium.seats()+ 85000
+    def inEurope(self):
+        return "Barcelona stadium is in Barcelona, Spain which is in"+ self.decorated_stadium.inEurope()

@@ -21,5 +21,15 @@ class Stadium_DecoratorTest(unittest.TestCase):
         self.assertEqual(fans,"Football Fans that are from Madrid. Population 3 mill")
         self.assertEqual(seats,75100)
         self.assertEqual(inEurope,"Real Madrid stadium is in Madrid, Spain which is inEurope")
+
+    def teststadiumdecorator(self):
+        myStadium=decoratorPatt.Base_Stadium()
+        decoratedstadium=decoratorPatt.Barcelona(myStadium)
+        fans=decoratedstadium.fans()
+        seats=decoratedstadium.seats()
+        inEurope=decoratedstadium.inEurope()
+        self.assertEqual(fans,"Football Fans that are from Barcelona. Population 3 mill")
+        self.assertEqual(seats,85100)
+        self.assertEqual(inEurope,"Barcelona stadium is in Barcelona, Spain which is inEurope")
 if __name__=='__main__':
         unittest.main()
