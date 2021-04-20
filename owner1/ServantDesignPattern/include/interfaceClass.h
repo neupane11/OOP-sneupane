@@ -13,7 +13,6 @@ class Interface{
         virtual void receiveCompliments()=0;
 
         virtual bool getMood()=0;
-        //virtual void setPosition(Position P)=0;
-        //virtual Position *getPosition()=0;
+        
         
 };

@@ -2,13 +2,13 @@
 #include <iostream>
 #include "../include/servant.h"
 #include "../include/interfaceClass.h"
-#include "../include/Queen.h"
+
+#include "../include/Boss1.h"
+
 
 int main(){
-    Servant ram("Ram");
-    Queen q;
-    
-    //feed
+    Servant ram("ram");
+    Boss1* q;
     ram.feed(q);
     ram.giveWine(q);
     ram.giveCompliments(q);

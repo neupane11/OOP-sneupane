@@ -1,13 +1,13 @@
 #pragma once
-#include <interfaceClass.h>
-//#include "../include/interfaceClass.h"
+//#include <interfaceClass.h>
+#include "../include/interfaceClass.h"
 #include <string>
 
 using namespace std;
 
 class Boss1:public Interface{
     private:
-        bool isDrunk = true;
+        bool isDrunk;
         bool isHungry;
         bool isHappy;
         //bool isFlirty = true;

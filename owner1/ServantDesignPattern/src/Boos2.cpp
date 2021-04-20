@@ -17,7 +17,7 @@ void Boss2::receiveCompliments(){
 void Boss2::changeMood(){
     if(isHungry && !isDrunk){
         isHappy=false;
-        cout<<"Boss2 is not happy"<<endl;
+        //cout<<"Boss2 is not happy"<<endl;
     }
 }
 bool Boss2::getMood(){

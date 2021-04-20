@@ -16,7 +16,7 @@ void Boss1::receiveCompliments(){
 void Boss1::changeMood(){
     if(complimentReceived && isDrunk && !isHungry){
         isHappy=true;
-        cout<<"Boss1 is happy"<<endl;
+        //cout<<"Boss1 is happy"<<endl;
     }
 }
 bool Boss1::getMood(){
