@@ -7,16 +7,13 @@ const assertEq=assert.deepStrictEqual
 
 describe('Car',function(){
     describe('#mycar',function(){
-        it('car name and model',function(){
+        it('car name ',function(){
             const carname='ford'
-            const carmodel='mustang'
             
-            let car1=new Model(carname,carmodel)
-            assertEq("I have a ford, it is a mustang",car1.mycar())
+            let car1=new Car(carname)
+            assertEq("I have a ford",car1.present())
             
             
         })
     })
-    
-   
 })
