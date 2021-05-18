@@ -1,7 +1,7 @@
 
 # Screenshot
 
-![Screenshot](finaltest.png)
+![Screenshot](testfinal.png)
 
 # Hello
 
