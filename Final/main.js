@@ -1,5 +1,7 @@
+
 class User {
     constructor(name) {
+      
       this.name = name
     }
 
@@ -10,6 +12,7 @@ class User {
 
   class NullUser {
     constructor() {
+    
       this.name = 'Guest'
     }
 
@@ -42,6 +45,7 @@ function getUser(name) {
   function loginUser(user) {
     let content = `<p class="text-danger">You must be logged in to view this</p>`
     if (user.hasAccess()) {
+      
       content = `<p>Congrats you are logged in</p>`
     }
     document.getElementById('content').innerHTML =
