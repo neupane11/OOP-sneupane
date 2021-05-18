@@ -9,34 +9,25 @@ const assertEq=assert.deepStrictEqual
 
 describe('User',function(){
     describe('#user',function(){
-        it('sandip is a user',function(){
+        it('sandip is a user so he has access',function(){
             const name='sandip'
             let user1=new User(name)
             
-            assertEq(user1,getUser(name))
-            assertEq(true,user1.hasAccess())
+            assertEq(user1.hasAccess(),true)
+            assertEq(loginUser(getUser(name)),'Congrats you are logged in')
         })
     })
 })
 describe('NullUser',function(){
     describe('#Nulluser',function(){
-        it('Guest is not a user',function(){
+        it('Guest user has no access',function(){
             const name= null
             let guest=new NullUser(name)
             
-            assertEq(guest,getUser(name))
-            assertEq(false,guest.hasAccess())
+            assertEq(getUser(name),guest)
+            assertEq(guest.hasAccess(),false)
         })
     })
 })
-describe('User',function(){
-    describe('#user',function(){
-        it('sandip is a user so he is logged in',function(){
-            const name='sandip'
-            user=getUser(name)
-            
-            assertEq('Congrats you are logged in',loginUser(user))
-        })
-    })
-})
+
 
